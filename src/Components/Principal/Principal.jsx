@@ -7,7 +7,7 @@ export default function Principal() {
     <div className="pantalla-principal">
       <div className="contenido-principal">
         <div className="nombre-titulo">
-          Sebatián Córdoba
+          Sebatián Córdoba 3
         </div>
         <div className="subtitulo">
           Científico de datos
@@ -30,7 +30,7 @@ export default function Principal() {
         <div className="imagen-perfil">
           <img
             className="imagen"
-            src="public/assets/Foto Linkedin 1.png"
+            src="/public/assets/Foto Linkedin 1.png"
             alt="Foto de perfil"
           />
         </div>
