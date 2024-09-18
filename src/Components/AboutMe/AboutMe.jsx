@@ -15,7 +15,7 @@ export default function AboutMe() {
                         className="estrella-A"
                         style={{
                             top: `${Math.random() * 100}%`,
-                            left: `${Math.random() * 90}%`,
+                            left: `${Math.random() * 100}%`,
                             animationDelay: `${Math.random() * 10}s`,
                             animationDuration: `${Math.random() * 3 + 4}s`,
                         }}
@@ -40,7 +40,7 @@ export default function AboutMe() {
 
             <div className="menu">
                 {['Principal', 'Proyectos', 'Habilidades', 'Contáctame'].map((item, index) => {
-                    const paths = ["/Portfolio", "/proyectos", "/habilidades", "/contactame"];
+                    const paths = ["/", "/proyectos", "/habilidades", "/contactame"];
                     return (
                         <div key={index} className="menu-item">
                             <Link to={paths[index]} className="menu-texto">
