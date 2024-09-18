@@ -7,7 +7,7 @@ export default function Principal() {
     <div className="pantalla-principal">
       <div className="contenido-principal">
         <div className="nombre-titulo">
-          Sebatián Córdoba 3
+          Sebatián Córdoba 4
         </div>
         <div className="subtitulo">
           Científico de datos
@@ -18,8 +18,8 @@ export default function Principal() {
               key={i}
               className="estrella"
               style={{
-                top: `${(Math.random()-0.1) * 100}%`,
-                left: `${(Math.random()-0.1) * 100}%`,
+                top: `${(Math.random() - 0.1) * 100}%`,
+                left: `${(Math.random() - 0.1) * 100}%`,
                 animationDelay: `${Math.random() * 10}s`,
                 animationDuration: `${Math.random() * 3 + 4}s`,
               }}
@@ -30,41 +30,58 @@ export default function Principal() {
         <div className="imagen-perfil">
           <img
             className="imagen"
-            src="/public/assets/Foto Linkedin 1.png"
+            src={`${process.env.PUBLIC_URL}/assets/Foto Linkedin 1.png`}
             alt="Foto de perfil"
           />
         </div>
-        <a href="https://linkedin.com/in/juan-sebastian-cordoba-valderrama-a6a4062ab" target="_blank" rel="noopener noreferrer">
+
+        <a
+          href="https://linkedin.com/in/juan-sebastian-cordoba-valderrama-a6a4062ab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className="icono"
-            src="dist/assets/LinkedIn.svg"
+            src={`${process.env.PUBLIC_URL}/assets/LinkedIn.svg`}
             alt="LinkedIn Icon"
             style={{ left: 684 }}
           />
         </a>
 
-        <a href="https://x.com/seeb444s" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://x.com/seeb444s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className="icono"
-            src="public/assets/TwitterX.svg"
+            src={`${process.env.PUBLIC_URL}/assets/TwitterX.svg`}
             alt="Twitter Icon"
             style={{ left: 839 }}
           />
         </a>
 
-        <a href="https://www.instagram.com/seeb444s/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/seeb444s/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className="icono"
-            src="public/assets/Instagram.svg"
+            src={`${process.env.PUBLIC_URL}/assets/Instagram.svg`}
             alt="Instagram Icon"
             style={{ left: 995 }}
           />
         </a>
 
-        <a href="https://github.com/SebasRubik" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/SebasRubik"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className="git"
-            src="public/assets/Github.svg"
+            src={`${process.env.PUBLIC_URL}/assets/Github.svg`}
             alt="Github Icon"
             style={{ left: 1151 }}
           />
@@ -78,18 +95,19 @@ export default function Principal() {
       </div>
 
       <div className="menu">
-        {['Acerca de mí', 'Proyectos', 'Habilidades', 'Contáctame'].map((item, index) => {
-          const paths = ["/about-me", "/proyectos", "/habilidades", "/contactame"];
-          return (
-            <div key={index} className="menu-item">
-              <Link to={paths[index]} className="menu-texto">
-                {item}
-              </Link>
-            </div>
-          );
-        })}
+        {['Acerca de mí', 'Proyectos', 'Habilidades', 'Contáctame'].map(
+          (item, index) => {
+            const paths = ['/about-me', '/proyectos', '/habilidades', '/contactame'];
+            return (
+              <div key={index} className="menu-item">
+                <Link to={paths[index]} className="menu-texto">
+                  {item}
+                </Link>
+              </div>
+            );
+          }
+        )}
       </div>
-      
     </div>
   );
 }
