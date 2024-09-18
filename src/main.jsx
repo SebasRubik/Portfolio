@@ -13,7 +13,7 @@ import Contactame from './Components/Contactame/Contactame.jsx';
 createRoot(document.getElementById('root')).render( 
   <Router>
     <Routes>
-      <Route path="/" element={<Principal />} />
+      <Route path="/Portfolio" element={<Principal />} />
       <Route path="/about-me" element={<AboutMe/>}/>
       <Route path="/habilidades" element={<Habilidades />} />
       <Route path="/contactame" element={<Contactame />} />
