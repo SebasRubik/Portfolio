@@ -7,7 +7,7 @@ export default function AboutMe() {
     return (
         <div className="pantalla-principal-A">
             <div className="contenido-principal-A">
-                <div className="nombre-titulo-A">Sebatián Córdoba 1</div>
+                <div className="nombre-titulo-A">Sebatián Córdoba </div>
                 <div className="subtitulo-A">Científico de datos</div>
                 <div className="gradiente-fondo-A">   {[...Array(100)].map((_, i) => (
                     <div
@@ -26,7 +26,7 @@ export default function AboutMe() {
                     <div className="imagen-fondo-A" />
                     <img
                         className="imagen-A"
-                        src="public\assets\Foto linkedin 1.png"
+                        src="dist\assets\Foto linkedin 1.png"
                         alt="Perfil"
                     />
                 </div>

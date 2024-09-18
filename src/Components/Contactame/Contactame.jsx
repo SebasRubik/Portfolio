@@ -26,19 +26,19 @@ export default function Contactame() {
                     <div className="imagen-fondo-contactame-C"></div>
                     <img
                         className="imagen-contactame-C"
-                        src="public\assets\Foto linkedin 1.png"
+                        src="dist\assets\Foto linkedin 1.png"
                         alt="Perfil"
                     />
                 </div>
                 <img
                     className="icono-contactame-C"
-                    src="public\assets\LinkedIn.svg"
+                    src="dist\assets\LinkedIn.svg"
                     style={{ left: 693, top: 266 }}
                     alt="Icon 1"
                 />
                 <img
                     className="icono-contactame-C"
-                    src="public\assets\Gmail Logo.svg"
+                    src="dist\assets\Gmail Logo.svg"
                     style={{ left: 693, top: 414 }}
                     alt="Icon 2"
                 />

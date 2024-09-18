@@ -7,7 +7,7 @@ export default function Principal() {
     <div className="pantalla-principal">
       <div className="contenido-principal">
         <div className="nombre-titulo">
-          Sebatián Córdoba
+          Sebatián Córdoba 1
         </div>
         <div className="subtitulo">
           Científico de datos
@@ -30,14 +30,14 @@ export default function Principal() {
         <div className="imagen-perfil">
           <img
             className="imagen"
-            src="public/assets/Foto Linkedin 1.png"
+            src="dist/assets/Foto Linkedin 1.png"
             alt="Foto de perfil"
           />
         </div>
         <a href="https://linkedin.com/in/juan-sebastian-cordoba-valderrama-a6a4062ab" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
-            src="public/assets/LinkedIn.svg"
+            src="dist/assets/LinkedIn.svg"
             alt="LinkedIn Icon"
             style={{ left: 684 }}
           />
@@ -46,7 +46,7 @@ export default function Principal() {
         <a href="https://x.com/seeb444s" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
-            src="public/assets/TwitterX.svg"
+            src="dist/assets/TwitterX.svg"
             alt="Twitter Icon"
             style={{ left: 839 }}
           />
@@ -55,7 +55,7 @@ export default function Principal() {
         <a href="https://www.instagram.com/seeb444s/" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
-            src="public/assets/Instagram.svg"
+            src="dist/assets/Instagram.svg"
             alt="Instagram Icon"
             style={{ left: 995 }}
           />
@@ -64,7 +64,7 @@ export default function Principal() {
         <a href="https://github.com/SebasRubik" target="_blank" rel="noopener noreferrer">
           <img
             className="git"
-            src="public/assets/Github.svg"
+            src="dist/assets/Github.svg"
             alt="Github Icon"
             style={{ left: 1151 }}
           />
