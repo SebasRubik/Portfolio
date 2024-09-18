@@ -14,8 +14,8 @@ export default function AboutMe() {
                         key={i}
                         className="estrella-A"
                         style={{
-                            top: `${Math.random() * 100}%`,
-                            left: `${Math.random() * 100}%`,
+                            top: `${(Math.random()-0.1) * 100}%`,
+                            left: `${(Math.random()-0.1) * 100}%`,
                             animationDelay: `${Math.random() * 10}s`,
                             animationDuration: `${Math.random() * 3 + 4}s`,
                         }}

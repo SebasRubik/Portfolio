@@ -11,7 +11,7 @@ import Habilidades from './Components/Habilidades/Habilidades.jsx';
 import Contactame from './Components/Contactame/Contactame.jsx';
 
 createRoot(document.getElementById('root')).render( 
-  <Router basename="/Portfolio">
+  <Router basename="/Portfolio/">
     <Routes>
       <Route path="/" element={<Principal/>} />
       <Route path="/about-me" element={<AboutMe/>} />
@@ -21,7 +21,4 @@ createRoot(document.getElementById('root')).render(
   </Router>
 );
 
-/*  
-      <Route path="/proyectos" element={<Proyectos />} />
-      <Route path="/habilidades" element={<Habilidades />} />
-      <Route path="/contactame" element={<Contactame />} /></> */
+//<Route path="/proyectos" element={<Proyectos />} />
