@@ -11,10 +11,10 @@ import Habilidades from './Components/Habilidades/Habilidades.jsx';
 import Contactame from './Components/Contactame/Contactame.jsx';
 
 createRoot(document.getElementById('root')).render( 
-  <Router>
+  <Router basename="/Portfolio">
     <Routes>
-      <Route path="/Portfolio" element={<Principal />} />
-      <Route path="/about-me" element={<AboutMe/>}/>
+      <Route path="/" element={<Principal />} />
+      <Route path="/about-me" element={<AboutMe />} />
       <Route path="/habilidades" element={<Habilidades />} />
       <Route path="/contactame" element={<Contactame />} />
     </Routes>

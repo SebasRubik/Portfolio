@@ -52,7 +52,7 @@ export default function Contactame() {
 
             <div className="menu">
                 {['Principal', 'Acerca de mí', 'Proyectos', 'Habilidades'].map((item, index) => {
-                    const paths = ['/', "/about-me", "/proyectos", "/habilidades"];
+                    const paths = ['/Portfolio', "/about-me", "/proyectos", "/habilidades"];
                     return (
                         <div key={index} className="menu-item">
                             <Link to={paths[index]} className="menu-texto">

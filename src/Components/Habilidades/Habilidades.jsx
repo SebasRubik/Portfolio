@@ -55,7 +55,7 @@ export default function Habilidades() {
 
 			<div className="menu">
 				{['Principal','Acerca de mí', 'Proyectos', 'Contáctame'].map((item, index) => {
-					const paths = ['/',"/about-me", "/proyectos", "/contactame"];
+					const paths = ['/Portfolio',"/about-me", "/proyectos", "/contactame"];
 					return (
 						<div key={index} className="menu-item">
 							<Link to={paths[index]} className="menu-texto">

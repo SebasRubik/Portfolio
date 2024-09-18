@@ -40,7 +40,7 @@ export default function AboutMe() {
 
             <div className="menu">
                 {['Principal', 'Proyectos', 'Habilidades', 'Contáctame'].map((item, index) => {
-                    const paths = ["/", "/proyectos", "/habilidades", "/contactame"];
+                    const paths = ["/Portfolio", "/proyectos", "/habilidades", "/contactame"];
                     return (
                         <div key={index} className="menu-item">
                             <Link to={paths[index]} className="menu-texto">

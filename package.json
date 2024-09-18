@@ -2,7 +2,7 @@
   "name": "basics",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://SebasRubik.github.io/Portfolio",
+  "homepage": "https://SebasRubik.github.io/Portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
