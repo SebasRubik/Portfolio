@@ -53,13 +53,13 @@ Asegúrate de tener instalado **Node.js** y **npm** o **yarn** en tu sistema.
 1. Clona este repositorio en tu máquina local.
 
 ```bash
-git clone https://github.com/tu-usuario/mi-portafolio.git
+git clone https://github.com/tu-usuario/portfolio.git
 ```
 
 2. Navega al directorio del proyecto.
 
 ```bash
-cd mi-portafolio
+cd portfolio
 ```
 
 3. Instala las dependencias.
@@ -111,30 +111,4 @@ Si deseas saber más sobre mí o trabajar juntos en algún proyecto, puedes cont
 
 - [ ] Mejorar la versión móvil del portafolio.
 - [ ] Añadir más animaciones a la sección de Proyectos.
-- [ ] Implementar un formulario de contacto funcional.
 
-## 🛠 Despliegue
-
-El portafolio está desplegado utilizando [Firebase Hosting](https://firebase.google.com/). Para desplegar el proyecto, sigue estos pasos:
-
-1. Instala la CLI de Firebase si no la tienes instalada:
-
-```bash
-npm install -g firebase-tools
-```
-
-2. Inicia sesión en Firebase:
-
-```bash
-firebase login
-```
-
-3. Despliega la aplicación:
-
-```bash
-firebase deploy
-```
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT - mira el archivo [LICENSE](LICENSE) para más detalles.
