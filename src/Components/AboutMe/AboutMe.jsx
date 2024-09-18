@@ -26,7 +26,7 @@ export default function AboutMe() {
                     <div className="imagen-fondo-A" />
                     <img
                         className="imagen-A"
-                        src="src\assets\Foto linkedin 1.png"
+                        src="public\assets\Foto linkedin 1.png"
                         alt="Perfil"
                     />
                 </div>
