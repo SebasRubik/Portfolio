@@ -7,7 +7,7 @@ export default function Principal() {
     <div className="pantalla-principal">
       <div className="contenido-principal">
         <div className="nombre-titulo">
-          Sebatián Córdoba 1
+          Sebatián Córdoba
         </div>
         <div className="subtitulo">
           Científico de datos
@@ -30,7 +30,7 @@ export default function Principal() {
         <div className="imagen-perfil">
           <img
             className="imagen"
-            src="dist/assets/Foto Linkedin 1.png"
+            src="public/assets/Foto Linkedin 1.png"
             alt="Foto de perfil"
           />
         </div>
@@ -46,7 +46,7 @@ export default function Principal() {
         <a href="https://x.com/seeb444s" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
-            src="dist/assets/TwitterX.svg"
+            src="public/assets/TwitterX.svg"
             alt="Twitter Icon"
             style={{ left: 839 }}
           />
@@ -55,7 +55,7 @@ export default function Principal() {
         <a href="https://www.instagram.com/seeb444s/" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
-            src="dist/assets/Instagram.svg"
+            src="public/assets/Instagram.svg"
             alt="Instagram Icon"
             style={{ left: 995 }}
           />
@@ -64,7 +64,7 @@ export default function Principal() {
         <a href="https://github.com/SebasRubik" target="_blank" rel="noopener noreferrer">
           <img
             className="git"
-            src="dist/assets/Github.svg"
+            src="public/assets/Github.svg"
             alt="Github Icon"
             style={{ left: 1151 }}
           />
