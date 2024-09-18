@@ -2,7 +2,7 @@
 
 Este es el código fuente de mi portafolio personal, diseñado para mostrar mis habilidades como Científico de Datos y desarrollador de software. A través de esta web, podrás conocer más sobre mí, mis proyectos, habilidades y cómo contactarme.
 
-![Captura de pantalla del portafolio](src/assets/PaginaPrincipal.svg) <!-- Añade una captura de pantalla de tu portafolio -->
+![Captura de pantalla del portafolio](src/assets/PaginaPrincpial.svg) <!-- Añade una captura de pantalla de tu portafolio -->
 
 ## 📝 Descripción
 
