@@ -65,9 +65,6 @@ export default function Habilidades() {
 					);
 				})}
 			</div>
-
-
-
 		</div>
 	);
 }

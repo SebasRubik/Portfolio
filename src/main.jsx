@@ -8,7 +8,7 @@ import Principal from './Components/Principal/Principal.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
 //import Proyectos from './Components/Proyectos';
 import Habilidades from './Components/Habilidades/Habilidades.jsx';
-//import Contactame from './Components/Contactame';
+import Contactame from './Components/Contactame/Contactame.jsx';
 
 createRoot(document.getElementById('root')).render( 
   <Router>
@@ -16,6 +16,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/" element={<Principal />} />
       <Route path="/about-me" element={<AboutMe/>}/>
       <Route path="/habilidades" element={<Habilidades />} />
+      <Route path="/contactame" element={<Contactame />} />
     </Routes>
   </Router>
 );
