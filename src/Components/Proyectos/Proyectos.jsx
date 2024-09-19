@@ -6,7 +6,7 @@ export default function Proyectos() {
     const projects = [
         { title: "Portfolio", image: "assets/portfolioImagen.svg", repo: 'https://github.com/SebasRubik/Portfolio' },
         { title: "Fundamentos Multivariado", image: "assets/RpubsFundamentosMulti.png", repo: 'http://rpubs.com/Seeb444s/FundamentosAnalisisMultivariado' },
-        { title: "Portfolio", image: "assets/portfolioImagen.svg", repo: 'https://github.com/SebasRubik/Portfolio' }
+        { title: "Explive", image: "assets/logoExplive.png", repo: 'https://github.com/SebasRubik/Explive' }
     ];
 
     return (
