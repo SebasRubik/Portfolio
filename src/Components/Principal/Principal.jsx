@@ -77,18 +77,13 @@ export default function Principal() {
         </div>
       </div>
 
-      <div className="menu">
-        {['Acerca de mí', 'Proyectos', 'Habilidades', 'Contáctame'].map((item, index) => {
-          const paths = ["/about-me", "/proyectos", "/habilidades", "/contactame"];
-          return (
-            <div key={index} className="menu-item">
-              <Link to={paths[index]} className="menu-texto">
-                {item}
-              </Link>
-            </div>
-          );
-        })}
-      </div>
+      <nav className="menu-proyectos">
+        {['Acerca de mí', 'Habilidades','Proyectos', 'Contáctame'].map((item, index) => (
+          <Link key={index} to={["/about-me", "/habilidades",'/proyectos', "/contactame"][index]} className="menu-item">
+            {item}
+          </Link>
+        ))}
+      </nav>
     </div>
   );
 }

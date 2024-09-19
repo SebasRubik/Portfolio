@@ -1,34 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Proyectos.css';
+import './Proyectos.css'; // Asegúrate de importar el archivo CSS
 
-export default function Principal() {
-    return (
-        <div className="pantalla-proyectos-P">
-            <div className="contenido-proyectos-P">
-            <div className="proyecto-card-P">
-                <div className="proyecto-fondo-P"></div>
-                    <img src = 'assets/portfolioImagen.svg'alt="Portfolio" />
-                    <div className="proyecto-titulo-P">Portfolio</div>
-                </div>
-                <div className="proyecto-card-P">
-                    <div className="proyecto-fondo-P"></div>
-                    <div className="proyecto-titulo-P">Proyecto 2</div>
-                </div>
-            </div>
+export default function Proyectos() {
+  const projects = [
+    { title: "Portfolio", image: "assets/portfolioImagen.svg" },
+    { title: "Proyecto 2", image: "assets/proyecto2.svg" },
+    { title: "Proyecto 3", image: "assets/proyecto3.svg" }
+  ];
 
-            <div className="menu">
-                {['Principal','Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => {
-                    const paths = ['/',"/about-me",, "/habilidades", "/contactame"];
-                    return (
-                        <div key={index} className="menu-item">
-                            <Link to={paths[index]} className="menu-texto">
-                                {item}
-                            </Link>
-                        </div>
-                    );
-                })}
+  return (
+    <div className="pantalla-proyectos-p">
+      <h1 className="titulo-principal-p">Proyectos</h1>
+      <div className="contenido-proyectos-p">
+        {projects.map((project, index) => (
+          <div key={index} className="proyecto-card-p">
+            <img src={project.image} alt={project.title} className="proyecto-imagen-p" />
+            <div className="proyecto-overlay-p">
+              <h3 className="proyecto-titulo-p">{project.title}</h3>
+              <button className="proyecto-boton-p">Ver más</button>
             </div>
-        </div>
-    )
+          </div>
+        ))}
+      </div>
+      <nav className="menu-proyectos-p">
+        {['Principal', 'Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => (
+          <Link key={index} to={['/', "/about-me", "/habilidades", "/contactame"][index]} className="menu-item-p">
+            {item}
+          </Link>
+        ))}
+      </nav>
+    </div>
+  );
 }

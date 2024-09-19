@@ -15,8 +15,8 @@ export default function AboutMe() {
                         key={i}
                         className="estrella-A"
                         style={{
-                            top: `${(Math.random()-0.1) * 100}%`,
-                            left: `${(Math.random()-0.1) * 100}%`,
+                            top: `${(Math.random() - 0.1) * 100}%`,
+                            left: `${(Math.random() - 0.1) * 100}%`,
                             animationDelay: `${Math.random() * 10}s`,
                             animationDuration: `${Math.random() * 3 + 4}s`,
                         }}
@@ -39,18 +39,13 @@ export default function AboutMe() {
                 </div>
             </div>
 
-            <div className="menu">
-                {['Principal', 'Proyectos', 'Habilidades', 'Contáctame'].map((item, index) => {
-                    const paths = ["/", "/proyectos", "/habilidades", "/contactame"];
-                    return (
-                        <div key={index} className="menu-item">
-                            <Link to={paths[index]} className="menu-texto">
-                                {item}
-                            </Link>
-                        </div>
-                    );
-                })}
-            </div>
+            <nav className="menu-proyectos">
+                {['Principal', 'Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => (
+                    <Link key={index} to={['/', "/about-me", "/habilidades", "/contactame"][index]} className="menu-item">
+                        {item}
+                    </Link>
+                ))}
+            </nav>
         </div>
     )
 

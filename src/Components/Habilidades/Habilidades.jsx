@@ -25,7 +25,7 @@ export default function Habilidades() {
 
 				<div className="imagen-perfil-h">
 					<div className="imagen-fondo-h"></div>
-					<img className="imagen-h" src= 'assets/Foto linkedin 1.png' alt="Perfil" />
+					<img className="imagen-h" src='assets/Foto linkedin 1.png' alt="Perfil" />
 				</div>
 
 				<div className="barra-h habilidad-logica-h">
@@ -53,18 +53,13 @@ export default function Habilidades() {
 				<div className="porcentaje-h porcentaje-r-h">80%</div>
 			</div>
 
-			<div className="menu">
-				{['Principal','Acerca de mí', 'Proyectos', 'Contáctame'].map((item, index) => {
-					const paths = ['/',"/about-me", "/proyectos", "/contactame"];
-					return (
-						<div key={index} className="menu-item">
-							<Link to={paths[index]} className="menu-texto">
-								{item}
-							</Link>
-						</div>
-					);
-				})}
-			</div>
+			<nav className="menu-proyectos">
+				{['Principal', 'Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => (
+					<Link key={index} to={['/', "/about-me", "/habilidades", "/contactame"][index]} className="menu-item">
+						{item}
+					</Link>
+				))}
+			</nav>
 		</div>
 	);
 }

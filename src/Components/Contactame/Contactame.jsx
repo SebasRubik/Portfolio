@@ -26,13 +26,13 @@ export default function Contactame() {
                     <div className="imagen-fondo-contactame-C"></div>
                     <img
                         className="imagen-contactame-C"
-                        src= 'assets/Foto linkedin 1.png'
+                        src='assets/Foto linkedin 1.png'
                         alt="Perfil"
                     />
                 </div>
                 <img
                     className="icono-contactame-C"
-                    src= 'assets/LinkedIn.svg'
+                    src='assets/LinkedIn.svg'
                     style={{ left: 693, top: 266 }}
                     alt="Icon 1"
                 />
@@ -50,18 +50,13 @@ export default function Contactame() {
                 </div>
             </div>
 
-            <div className="menu">
-                {['Principal', 'Acerca de mí', 'Proyectos', 'Habilidades'].map((item, index) => {
-                    const paths = ['/', "/about-me", "/proyectos", "/habilidades"];
-                    return (
-                        <div key={index} className="menu-item">
-                            <Link to={paths[index]} className="menu-texto">
-                                {item}
-                            </Link>
-                        </div>
-                    );
-                })}
-            </div>
+            <nav className="menu-proyectos">
+                {['Principal', 'Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => (
+                    <Link key={index} to={['/', "/about-me", "/habilidades", "/contactame"][index]} className="menu-item">
+                        {item}
+                    </Link>
+                ))}
+            </nav>
         </div>
     )
 }

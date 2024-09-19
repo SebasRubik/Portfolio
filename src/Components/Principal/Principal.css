@@ -14,11 +14,12 @@
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
-  
+
   .contenido-principal {
     width: 1280px;
     height: 720px;
@@ -31,7 +32,7 @@
     margin-bottom: 40px;
     animation: fadeIn-h 1.5s ease-in-out;
   }
-  
+
   .nombre-titulo {
     width: 583px;
     height: 55px;
@@ -45,7 +46,7 @@
     font-weight: 700;
     word-wrap: break-word;
   }
-  
+
   .subtitulo {
     width: 464px;
     height: 24px;
@@ -59,7 +60,7 @@
     font-weight: 400;
     word-wrap: break-word;
   }
-  
+
 
   .estrella {
     position: absolute;
@@ -72,10 +73,13 @@
   }
 
   @keyframes twinkle {
-    0%, 100% {
+
+    0%,
+    100% {
       opacity: 0;
       transform: scale(0.5);
     }
+
     50% {
       opacity: 1;
       transform: scale(1.5);
@@ -87,17 +91,19 @@
       transform: translateX(-100%);
       opacity: 0;
     }
+
     100% {
       transform: translateX(0);
       opacity: 1;
     }
   }
-  
+
   @keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
       opacity: 0;
     }
+
     100% {
       transform: translateX(0);
       opacity: 1;
@@ -114,7 +120,7 @@
     border-radius: 9999px;
   }
 
-  
+
   .imagen-perfil {
     width: 395px;
     height: 394px;
@@ -122,13 +128,13 @@
     left: 57px;
     top: 245px;
   }
-  
+
   .imagen {
     width: 395px;
     height: 394px;
     border-radius: 9999px;
   }
-  
+
   .icono {
     width: 86px;
     height: 72px;
@@ -136,18 +142,19 @@
     top: 567px;
   }
 
-  .git{
+  .git {
     width: 55px;
     height: 55px;
     position: absolute;
     top: 575px;
   }
 
-  .icono, .git {
+  .icono,
+  .git {
     animation: fadeIn 1.2s forwards;
   }
 
-  
+
   .descripcion {
     width: 473px;
     height: 230px;
@@ -161,30 +168,29 @@
     animation: fadeIn 1.5s forwards;
     word-wrap: break-word;
   }
-  
-  .menu {
+
+  .menu-proyectos {
     display: flex;
     justify-content: center;
-    gap: 27px;
-    animation: fadeIn 1.5s forwards;
+    gap: 1rem;
+    margin-top: 2rem;
   }
   
   .menu-item {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 16px;
-  }
-  
-  .menu-texto {
-    color: white;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    color: #f2f2f2;
     text-decoration: none;
-    line-height: 24px;
-    word-wrap: break-word;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
   }
   
+  .menu-item:hover {
+    background: #3a3a3a;
+  }
+  
+  @keyframes fadeIn-p {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
