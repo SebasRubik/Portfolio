@@ -51,8 +51,8 @@ export default function Contactame() {
             </div>
 
             <nav className="menu-proyectos">
-                {['Principal', 'Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => (
-                    <Link key={index} to={['/', "/about-me", "/habilidades", "/contactame"][index]} className="menu-item">
+                {['Principal', 'Acerca de mí', 'Habilidades', 'Proyectos'].map((item, index) => (
+                    <Link key={index} to={['/', "/about-me", "/habilidades", "/proyectos"][index]} className="menu-item">
                         {item}
                     </Link>
                 ))}

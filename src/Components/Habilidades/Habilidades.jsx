@@ -54,8 +54,8 @@ export default function Habilidades() {
 			</div>
 
 			<nav className="menu-proyectos">
-				{['Principal', 'Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => (
-					<Link key={index} to={['/', "/about-me", "/habilidades", "/contactame"][index]} className="menu-item">
+				{['Principal', 'Acerca de mí', 'Proyectos', 'Contáctame'].map((item, index) => (
+					<Link key={index} to={['/', "/about-me", "/proyectos", "/contactame"][index]} className="menu-item">
 						{item}
 					</Link>
 				))}
