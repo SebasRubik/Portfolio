@@ -147,7 +147,7 @@
     }
     
     .contacto-info-C {
-        width: 389px;
+        width: 390px;
         height: 31px;
         left: 779px;
         top: 434px;
@@ -158,6 +158,12 @@
         word-wrap: break-word;
         color: white;
         animation: fadeInText 2s ease-in-out;
+    }
+
+    .texto-linkedIn-C{
+        color: #f2f2f2;
+        font-family:'Poppins', sans-serif;
+        text-decoration: none;
     }
     
     /* Animación de fade-in para los textos de contacto */
@@ -174,7 +180,7 @@
         width: 375px;
         height: 31px;
         left: 779px;
-        top: 286px;
+        top: 288px;
         position: absolute;
         color: white;
         font-size: 20px;
@@ -182,6 +188,7 @@
         font-weight: 600;
         text-decoration: underline;
         word-wrap: break-word;
+        text-decoration: none;
         animation: fadeInText 2.2s ease-in-out;
     }
     

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './AboutMe.css';
 
 
+
 export default function AboutMe() {
     return (
         <div className="pantalla-principal-A">
@@ -26,7 +27,7 @@ export default function AboutMe() {
                     <div className="imagen-fondo-A" />
                     <img
                         className="imagen-A"
-                        src="public\Foto linkedin 1.png"
+                        src='assets/Foto linkedin 1.png'
                         alt="Perfil"
                     />
                 </div>

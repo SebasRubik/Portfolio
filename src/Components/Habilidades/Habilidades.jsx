@@ -25,7 +25,7 @@ export default function Habilidades() {
 
 				<div className="imagen-perfil-h">
 					<div className="imagen-fondo-h"></div>
-					<img className="imagen-h" src= "public\Foto linkedin 1.png" alt="Perfil" />
+					<img className="imagen-h" src= 'assets/Foto linkedin 1.png' alt="Perfil" />
 				</div>
 
 				<div className="barra-h habilidad-logica-h">

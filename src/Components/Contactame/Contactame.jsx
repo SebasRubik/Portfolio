@@ -26,19 +26,19 @@ export default function Contactame() {
                     <div className="imagen-fondo-contactame-C"></div>
                     <img
                         className="imagen-contactame-C"
-                        src="public\Foto linkedin 1.png"
+                        src= 'assets/Foto linkedin 1.png'
                         alt="Perfil"
                     />
                 </div>
                 <img
                     className="icono-contactame-C"
-                    src="public\LinkedIn.svg"
+                    src= 'assets/LinkedIn.svg'
                     style={{ left: 693, top: 266 }}
                     alt="Icon 1"
                 />
                 <img
                     className="icono-contactame-C"
-                    src="public\Gmail Logo.svg"
+                    src='assets/Gmail Logo.svg'
                     style={{ left: 693, top: 414 }}
                     alt="Icon 2"
                 />
@@ -46,7 +46,7 @@ export default function Contactame() {
                     <span className="correo-contactame-C">juans-cordoba@javeriana.edu.co</span>
                 </div>
                 <div className="linkedin-contactame-C">
-                    linkedin.com/in/juan-sebastian-cordoba-valderrama-a6a4062ab
+                    <a className='texto-linkedIn-C' href='https://linkedin.com/in/juan-sebastian-cordoba-valderrama-a6a4062ab'> LinkedIn</a>
                 </div>
             </div>
 
