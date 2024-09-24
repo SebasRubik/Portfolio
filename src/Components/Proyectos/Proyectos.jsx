@@ -6,7 +6,9 @@ export default function Proyectos() {
     const projects = [
         { title: "Portfolio", image: "assets/portfolioImagen.svg", repo: 'https://github.com/SebasRubik/Portfolio' },
         { title: "Fundamentos Multivariado", image: "assets/RpubsFundamentosMulti.png", repo: 'http://rpubs.com/Seeb444s/FundamentosAnalisisMultivariado' },
-        { title: "Explive", image: "assets/logoExplive.png", repo: 'https://github.com/SebasRubik/Explive' }
+        { title: "Explive", image: "assets/logoExplive.png", repo: 'https://github.com/SebasRubik/Explive' },
+        {title: 'Habit Tracker', image: "assets/HabitTrackerLogo.png", repo: 'https://github.com/SebasRubik/Habit-Tracker'},
+        {title: 'Procesamiento Comentarios de Youtube', image: 'assets/youtubelogo.png', repo: 'https://github.com/SebasRubik/YuotubeComments-Processing' }
     ];
 
     return (
