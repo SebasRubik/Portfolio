@@ -42,16 +42,7 @@ export default function Principal() {
             style={{ left: 684 }}
           />
         </a>
-
-        <a href="https://x.com/seeb444s" target="_blank" rel="noopener noreferrer">
-          <img
-            className="icono"
-            src='assets/TwitterX.svg'
-            alt="Twitter Icon"
-            style={{ left: 839 }}
-          />
-        </a>
-
+        
         <a href="https://www.instagram.com/seeb444s/" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
