@@ -34,21 +34,22 @@ export default function Principal() {
             alt="Foto de perfil"
           />
         </div>
+
         <a href="https://linkedin.com/in/juan-sebastian-cordoba-valderrama-a6a4062ab" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
             src='assets/LinkedIn.svg'
             alt="LinkedIn Icon"
-            style={{ left: 684 }}
+            style={{ left: 680 }}
           />
         </a>
-        
+
         <a href="https://www.instagram.com/seeb444s/" target="_blank" rel="noopener noreferrer">
           <img
             className="icono"
             src='assets/Instagram.svg'
             alt="Instagram Icon"
-            style={{ left: 995 }}
+            style={{ left: 880 }}
           />
         </a>
 
@@ -57,7 +58,7 @@ export default function Principal() {
             className="git"
             src='assets/Github.svg'
             alt="Github Icon"
-            style={{ left: 1151 }}
+            style={{ left: 1080 }}
           />
         </a>
 
