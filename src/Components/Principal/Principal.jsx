@@ -27,16 +27,6 @@ export default function Principal() {
       
       <div className="hero-right">
         <div className="hero-frame">
-          <div className="floating-badge badge-1">
-            <div className="dot dot-red"></div> Python
-          </div>
-          <div className="floating-badge badge-2">
-            <div className="dot dot-blue"></div> React
-          </div>
-          <div className="floating-badge badge-3">
-            <div className="dot dot-green"></div> Machine Learning
-          </div>
-          
           <div className="hero-avatar">
             <img src={`${import.meta.env.BASE_URL}assets/perfil.png`} alt="Sebastián Córdoba" className="hero-img" onError={(e) => {e.target.src = 'https://via.placeholder.com/140'; console.error('Imagen no encontrada')}} />
           </div>
