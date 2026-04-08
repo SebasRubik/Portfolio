@@ -19,6 +19,9 @@ export default function SpiderBackground() {
   return (
     <Particles
       id="tsparticles"
+      particlesLoaded={async (container) => {
+        window.tsparticlesContainer = container;
+      }}
       options={{
         background: {
           color: {
@@ -73,16 +76,21 @@ export default function SpiderBackground() {
               enable: true,
               area: 800,
             },
-            value: 80, // Nodos extra para tejer la red densa
+            value: 60, // Menos nodos para una red más limpia y simétrica
           },
           opacity: {
-            value: 0.2, // Menos visibles los puntos, más énfasis en los hilos
+            value: 0.4, 
           },
           shape: {
-            type: "circle",
+            type: "polygon", // Simetría geométrica para los nodos
+            options: {
+              polygon: {
+                sides: 6 // Hexágonos (simetría natural frecuentemente la de las telarañas)
+              }
+            }
           },
           size: {
-            value: { min: 0.5, max: 1.5 },
+            value: { min: 1, max: 3 }, // Nodos un poco más visibles para apreciar la forma
           },
         },
         detectRetina: true,

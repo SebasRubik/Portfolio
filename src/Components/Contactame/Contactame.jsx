@@ -12,9 +12,9 @@ export default function Contactame() {
       </div>
       
       <div className="contact-right">
-        <button className="social-btn">Li</button>
-        <button className="social-btn">Gh</button>
-        <button className="social-btn">Ig</button>
+        <a href="https://www.linkedin.com/in/sebastian-cordoba" target="_blank" rel="noreferrer" className="social-btn">Li</a>
+        <a href="https://github.com/SebasRubik" target="_blank" rel="noreferrer" className="social-btn">Gh</a>
+        <a href="https://www.instagram.com/seeb444s/" target="_blank" rel="noreferrer" className="social-btn">Ig</a>
       </div>
     </footer>
   );

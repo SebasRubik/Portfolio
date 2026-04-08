@@ -38,7 +38,7 @@ export default function Principal() {
           </div>
           
           <div className="hero-avatar">
-            <img src="/assets/Foto%20linkedin%201.png" alt="Sebastián Córdoba" className="hero-img" onError={(e) => {e.target.src = 'https://via.placeholder.com/140'; console.error('Imagen no encontrada')}} />
+            <img src={`${import.meta.env.BASE_URL}assets/perfil.png`} alt="Sebastián Córdoba" className="hero-img" onError={(e) => {e.target.src = 'https://via.placeholder.com/140'; console.error('Imagen no encontrada')}} />
           </div>
           <p className="hero-username">@SebasRubik</p>
           <div className="hero-strip"></div>
