@@ -1,0 +1,24 @@
+.spider-buddy {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  pointer-events: none; /* Crucial para no estorbar clics */
+  z-index: 100;
+}
+
+.spider-buddy svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s;
+}
+
+.spider-buddy.walking svg {
+  animation: body-wobble 0.3s infinite alternate cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes body-wobble {
+  from { transform: rotate(-5deg) translateY(-1px); }
+  to { transform: rotate(5deg) translateY(1px); }
+}

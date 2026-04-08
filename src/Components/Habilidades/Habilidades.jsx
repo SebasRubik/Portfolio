@@ -1,65 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Habilidades.css';
 
 export default function Habilidades() {
-	return (
-		<div className="pantalla-principal-h">
-			<div className="contenido-principal-h">
-				<div className="nombre-titulo-h">Sebatián Córdoba</div>
-				<div className="subtitulo-h">Científico de datos</div>
-				<div className="gradiente-fondo-h">
-					{[...Array(80)].map((_, i) => (
-						<div
-							key={i}
-							className="estrella"
-							style={{
-								top: `${(Math.random() - 0.1) * 100}%`,
-								left: `${(Math.random() - 0.1) * 100}%`,
-								animationDelay: `${Math.random() * 10}s`,
-								animationDuration: `${Math.random() * 3 + 4}s`,
-							}}
-						/>
-					))}
-				</div>
+  const skills = [
+    { name: 'Python', percent: 85 },
+    { name: 'R', percent: 80 },
+    { name: 'React', percent: 75 },
+    { name: 'SQL', percent: 80 },
+    { name: 'Power BI', percent: 70 },
+    { name: 'Java', percent: 70 },
+    { name: 'C++', percent: 65 },
+    { name: 'ML', percent: 75 }
+  ];
 
-				<div className="imagen-perfil-h">
-					<div className="imagen-fondo-h"></div>
-					<img className="imagen-h" src='assets/Foto linkedin 1.png' alt="Perfil" />
-				</div>
+  return (
+    <div className="habilidades-section">
+      <div className="section-header">
+        <span className="mono-label">// TECH STACK</span>
+        <h2 className="section-title">Mis Skills</h2>
+      </div>
 
-				<div className="barra-h habilidad-logica-h">
-					<div className="barra-fondo-h"></div>
-				</div>
-				<div className="texto-h texto-logica-h">Lógica de programación</div>
-				<div className="porcentaje-h porcentaje-logica-h">90%</div>
-
-				<div className="barra-h habilidad-estadistica-h">
-					<div className="barra-fondo-h"></div>
-				</div>
-				<div className="texto-h texto-estadistica-h">Estadística aplicada</div>
-				<div className="porcentaje-h porcentaje-estadistica-h">90%</div>
-
-				<div className="barra-h habilidad-python-h">
-					<div className="barra-fondo-h2"></div>
-				</div>
-				<div className="texto-h texto-python-h">Python</div>
-				<div className="porcentaje-h porcentaje-python-h">80%</div>
-
-				<div className="barra-h habilidad-r-h">
-					<div className="barra-fondo-h2"></div>
-				</div>
-				<div className="texto-h texto-r-h">R</div>
-				<div className="porcentaje-h porcentaje-r-h">80%</div>
-			</div>
-
-			<nav className="menu-proyectos">
-				{['Principal', 'Acerca de mí', 'Proyectos', 'Contáctame'].map((item, index) => (
-					<Link key={index} to={['/', "/about-me", "/proyectos", "/contactame"][index]} className="menu-item">
-						{item}
-					</Link>
-				))}
-			</nav>
-		</div>
-	);
+      <div className="skills-container">
+        {skills.map((skill, index) => (
+          <div className="skill-pill" key={index}>
+            <span className="skill-name">{skill.name}</span>
+            <div className="skill-progress-bg">
+              <div 
+                className="skill-progress-fill" 
+                style={{ width: `${skill.percent}%` }}
+              ></div>
+            </div>
+            <span className="skill-percent">{skill.percent}%</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }

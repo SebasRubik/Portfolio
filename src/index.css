@@ -1,4 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;600;800&display=swap');
+
 :root {
-  background-color: #2D2D2D;
-  margin: auto;
+  --bg-color: #FAFAFA;
+  --text-primary: #1A1A1A;
+  --accent-color: #E23636;
+  --text-secondary: #666666;
+  --text-tertiary: #888888;
+  --border-color: #E8E8E8;
+  
+  --font-heading: 'Outfit', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-body: 'Outfit', system-ui, -apple-system, sans-serif;
+  
+  --padding-lateral: 40px;
+  --gap-md: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--padding-lateral);
+  position: relative;
+  z-index: 10; /* para no solaparse con el fondo animado */
+}
+
+section {
+  padding: 80px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  letter-spacing: -0.5px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-top: 8px;
+  margin-bottom: 40px;
 }

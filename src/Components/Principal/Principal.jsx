@@ -1,81 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Principal.css';
 
 export default function Principal() {
+  const scrollTo = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="pantalla-principal">
-      <div className="contenido-principal">
-        <div className="nombre-titulo">
-          Sebatián Córdoba
-        </div>
-        <div className="subtitulo">
-          Científico de datos
-        </div>
-        <div className="gradiente-fondo">
-          {[...Array(80)].map((_, i) => (
-            <div
-              key={i}
-              className="estrella"
-              style={{
-                top: `${(Math.random()-0.1) * 100}%`,
-                left: `${(Math.random()-0.1) * 100}%`,
-                animationDelay: `${Math.random() * 10}s`,
-                animationDuration: `${Math.random() * 3 + 4}s`,
-              }}
-            />
-          ))}
-        </div>
-
-        <div className="imagen-perfil">
-          <img
-            className="imagen"
-            src= 'assets\Foto linkedin 1.png'
-            alt="Foto de perfil"
-          />
-        </div>
-
-        <a href="https://linkedin.com/in/juan-sebastian-cordoba-valderrama-a6a4062ab" target="_blank" rel="noopener noreferrer">
-          <img
-            className="icono"
-            src='assets/LinkedIn.svg'
-            alt="LinkedIn Icon"
-            style={{ left: 680 }}
-          />
-        </a>
-
-        <a href="https://www.instagram.com/seeb444s/" target="_blank" rel="noopener noreferrer">
-          <img
-            className="icono"
-            src='assets/Instagram.svg'
-            alt="Instagram Icon"
-            style={{ left: 880 }}
-          />
-        </a>
-
-        <a href="https://github.com/SebasRubik" target="_blank" rel="noopener noreferrer">
-          <img
-            className="git"
-            src='assets/Github.svg'
-            alt="Github Icon"
-            style={{ left: 1080 }}
-          />
-        </a>
-
-        <div className="descripcion">
-          Estudiante de ciencia de datos<br /><br />
-          Entusiasta de la tecnología<br /><br />
-          Fanático de la programación
+    <div className="hero-section">
+      <div className="hero-left">
+        <span className="mono-label">// DATA SCIENTIST & DEVELOPER</span>
+        <h1 className="hero-title">Sebastian Córdoba<span className="text-red">.</span></h1>
+        <h3 className="hero-subtitle">Científico de datos — Javeriana</h3>
+        <p className="hero-desc">
+          Construyo experiencias digitales escalables, modelos de machine learning que aportan valor y código con la disciplina necesaria para dominar cualquier stack. Resolviendo problemas complejos un bloque a la vez.
+        </p>
+        <div className="hero-ctas">
+          <a href="#proyectos" className="btn btn-primary" onClick={(e) => scrollTo(e, 'proyectos')}>Ver proyectos</a>
+          <a href="#contacto" className="btn btn-outline" onClick={(e) => scrollTo(e, 'contacto')}>Contáctame</a>
         </div>
       </div>
-
-      <nav className="menu-proyectos">
-        {['Acerca de mí', 'Habilidades','Proyectos', 'Contáctame'].map((item, index) => (
-          <Link key={index} to={["/about-me", "/habilidades",'/proyectos', "/contactame"][index]} className="menu-item">
-            {item}
-          </Link>
-        ))}
-      </nav>
+      
+      <div className="hero-right">
+        <div className="hero-frame">
+          <div className="floating-badge badge-1">
+            <div className="dot dot-red"></div> Python
+          </div>
+          <div className="floating-badge badge-2">
+            <div className="dot dot-blue"></div> React
+          </div>
+          <div className="floating-badge badge-3">
+            <div className="dot dot-green"></div> Machine Learning
+          </div>
+          
+          <div className="hero-avatar">
+            <img src="/assets/Foto%20linkedin%201.png" alt="Sebastián Córdoba" className="hero-img" onError={(e) => {e.target.src = 'https://via.placeholder.com/140'; console.error('Imagen no encontrada')}} />
+          </div>
+          <p className="hero-username">@SebasRubik</p>
+          <div className="hero-strip"></div>
+        </div>
+      </div>
     </div>
   );
 }

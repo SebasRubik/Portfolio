@@ -1,0 +1,54 @@
+.feid-banner-wrapper {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.feid-banner-discrete {
+  position: relative;
+  background-color: transparent;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-left: 2px solid #CCFF00;
+}
+
+.feid-accent-line {
+  display: none;
+}
+
+.feid-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feid-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.neon-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #CCFF00;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(204, 255, 0, 0.8);
+}
+
+.feid-quote {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}

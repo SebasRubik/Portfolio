@@ -1,39 +1,54 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Proyectos.css'; // Asegúrate de importar el archivo CSS
+import './Proyectos.css';
 
 export default function Proyectos() {
-    const projects = [
-        { title: "Portfolio", image: "assets/portfolioImagen.svg", repo: 'https://github.com/SebasRubik/Portfolio' },
-        { title: "Fundamentos Multivariado", image: "assets/RpubsFundamentosMulti.png", repo: 'http://rpubs.com/Seeb444s/FundamentosAnalisisMultivariado' },
-        { title: "Explive", image: "assets/logoExplive.png", repo: 'https://github.com/SebasRubik/Explive' },
-        {title: 'Habit Tracker', image: "assets/HabitTrackerLogo.png", repo: 'https://github.com/SebasRubik/Habit-Tracker'},
-        {title: 'Procesamiento Comentarios de Youtube', image: 'assets/youtubelogo.png', repo: 'https://github.com/SebasRubik/YuotubeComments-Processing' }
-    ];
+  const projects = [
+    {
+      id: 1,
+      init: 'EX',
+      name: 'Explive',
+      desc: 'Plataforma web dinámica construida para visualización y gestión en tiempo real.',
+      tags: ['React', 'Node.js']
+    },
+    {
+      id: 2,
+      init: 'HT',
+      name: 'Habit Tracker',
+      desc: 'Aplicación interactiva para seguimiento de hábitos y rutinas personales.',
+      tags: ['React', 'CSS']
+    },
+    {
+      id: 3,
+      init: 'YT',
+      name: 'YouTube Comments Processing',
+      desc: 'Pipeline de NLP para análisis y procesamiento masivo de comentarios en YouTube.',
+      tags: ['Python', 'NLP']
+    }
+  ];
 
-    return (
-        <div className="pantalla-proyectos-p">
-            <h1 className="titulo-principal-p">Proyectos</h1>
-            <div className="contenido-proyectos-p">
-                {projects.map((project, index) => (
-                    <div key={index} className="proyecto-card-p">
-                        <img src={project.image} alt={project.title} className="proyecto-imagen-p" />
-                        <div className="proyecto-overlay-p">
-                            <h3 className="proyecto-titulo-p">{project.title}</h3>
-                            <a href={project.repo} target="_blank" rel="noopener noreferrer">
-                                <button className="proyecto-boton-p">Ver más</button>
-                            </a>
-                        </div>
-                    </div>
-                ))}
+  return (
+    <div className="proyectos-section">
+      <div className="section-header">
+        <span className="mono-label">// PROYECTOS DESTACADOS</span>
+        <h2 className="section-title">Lo que he construido</h2>
+      </div>
+
+      <div className="proyectos-grid">
+        {projects.map((proj) => (
+          <div className="proyecto-card" key={proj.id}>
+            <div className="proyecto-icon">
+              {proj.init}
             </div>
-            <nav className="menu-proyectos-p">
-                {['Principal', 'Acerca de mí', 'Habilidades', 'Contáctame'].map((item, index) => (
-                    <Link key={index} to={['/', "/about-me", "/habilidades", "/contactame"][index]} className="menu-item-p">
-                        {item}
-                    </Link>
-                ))}
-            </nav>
-        </div>
-    );
+            <h3 className="proyecto-name">{proj.name}</h3>
+            <p className="proyecto-desc">{proj.desc}</p>
+            <div className="proyecto-tags">
+              {proj.tags.map((tag, i) => (
+                <span className="tag-pill" key={i}>{tag}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
